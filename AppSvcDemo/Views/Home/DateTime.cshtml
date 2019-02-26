@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "DateTime";
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p>Date/Time: <span id="datetime" style="font-size:large"></span></p>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/css/site.css")" rel="stylesheet" type="text/css" />
+    <title>Bear Stuffs</title>
+    <script>
+
+        function gup(name) { name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]"); var regexS = "[\\?&]" + name + "=([^&#]*)"; var regex = new RegExp(regexS); var results = regex.exec(window.location.href); if (results == null) return ""; else return results[1]; }
+
+    </script>
+</head>
+<body class="bear-body">
+    <div>
+
+        <script>document.write(gup('name'));</script>
+    </div>
+    <div class="jumbotron">
+        <!-- header for bear -->
+        <h1 id="Top" class="bear">Hello. I am bear.</h1>
+        <img src="https://www.glendaleca.gov/Home/ShowPublishedImage/19260/635787882276930000" height="240" width="300" alt="A bear waves to nearby gazers" class="bear-center" />
+        <p class="bear" id="datas">I like to do datas</p>
+    </div>
+</body>
